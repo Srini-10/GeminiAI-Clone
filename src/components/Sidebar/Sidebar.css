@@ -1,0 +1,9 @@
+.hover-cont:hover {
+  background-color: #d1d5db;
+}
+
+@media (maxwidth: 600px) {
+  .sidebar {
+    display: none;
+  }
+}

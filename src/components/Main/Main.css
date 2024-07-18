@@ -1,0 +1,81 @@
+.linear_Color {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Card {
+  width: 250px;
+  height: 190px;
+  padding: 15px;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.Card:hover {
+  background-color: #dfe4ea;
+}
+
+/* .Card p {
+    color: #585858;
+    font-size: 17px;
+} */
+
+.Card img {
+  width: 35px;
+  padding: 5px;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.scroll-bar {
+  animation: fadeIn 1.5s;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.loader hr {
+  border-radius: 4px;
+  border: none;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #50b6ff, transparent, #50b6ff);
+  background-size: 800px 50px;
+  height: 16px;
+  animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -800px 0px;
+  }
+  100% {
+    background-position: 800px 0px;
+  }
+}
+
+.result {
+  line-height: 1.8;
+}
+
+@media (maxwidth: 600px) {
+  .main-bottom input{
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img {
+    width: 20px;
+  }
+  .search-box {
+     padding: 5px 10px;
+  }
+  .Search_Icons {
+    gap: 5px;
+  }
+}
